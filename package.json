@@ -1,0 +1,24 @@
+{
+  "name": "deltapartners",
+  "version": "1.0.0",
+  "description": "A website I was commissioned to build for Delta Partners - one of the top executive search firms in the U.S.",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "materialize-css": "^1.0.0-rc.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mmeganshaw/deltapartners.git"
+  },
+  "author": "megan shaw",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mmeganshaw/deltapartners/issues"
+  },
+  "homepage": "https://github.com/mmeganshaw/deltapartners#readme"
+}
