@@ -6,7 +6,22 @@ var app = express();
 module.exports = function(app) {
     // to the home page
     app.get('/', function(req, res) {
-        res.sendFile(path.join(__dirname + '/../public/html/index.html'));
+        res.sendFile(path.join(__dirname + '/../public/index.html'));
+    });
+
+    // route to the about page
+    app.get('/about', function(req, res) {
+        res.sendFile(path.join(__dirname + '/../public/about.html'));
+    });
+
+    // route to the about page
+    app.get('/track-record', function(req, res) {
+        res.sendFile(path.join(__dirname + '/../public/track-record.html'));
+    });
+
+    // route to the about page
+    app.get('/contact', function(req, res) {
+        res.sendFile(path.join(__dirname + '/../public/contact.html'));
     });
 
     // gotta catch 'em all
