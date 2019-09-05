@@ -36,6 +36,12 @@
     background: url('../images/about/about_header.png') no-repeat center center/cover;
     height: 50vh;
   }
+
+  .landing-track {
+    position: relative;
+    background: url('../images/track/track-record-header.png') no-repeat center center/cover;
+    height: 50vh;
+  }
   
   .landing-inner {
     color: #fff;
