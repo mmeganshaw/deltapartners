@@ -24,6 +24,11 @@ module.exports = function(app) {
         res.sendFile(path.join(__dirname + '/../public/contact.html'));
     });
 
+    // route to the about page
+    app.get('/privacy-policy', function(req, res) {
+        res.sendFile(path.join(__dirname + '/../public/privacy-policy.html'));
+    });
+
     // gotta catch 'em all
     app.get('*', function(req, res) {
         res.redirect('/');
