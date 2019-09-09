@@ -1,10 +1,4 @@
-/* Custom Stylesheet */
-/**
- * Use this file to override Materialize files so you can update
- * the core Materialize files in the future
- *
- * Made By MaterializeCSS.com
- */
+
 
  .icon-block {
     padding: 0 15px;
@@ -43,16 +37,10 @@
     height: 50vh;
   }
   
-  .landing-inner {
-    color: #fff;
-    height: 100%;
-    width: 80%;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+  .landing-contact {
+    position: relative;
+    background: url('../images/contact/CONTACT_HEADER.png') no-repeat center center/cover;
+    height: 50vh;
   }
 
   html {
@@ -89,5 +77,9 @@
 
   .deltablue {
     color: #3067b1;
+  }
+
+  #hidden-div {
+    display: none;
   }
   
