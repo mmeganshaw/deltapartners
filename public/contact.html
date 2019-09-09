@@ -140,12 +140,13 @@
       <div class="row center">
         <div class="col s12">
             <h3>Thank you for submitting your information.</h3>
-            <h5>We'll be in contact shortly</h5>
+            <h5>We'll be in contact shortly.</h5>
         </div>
       </div>
     </div>
   </div>
 
+  <!-- begin footer -->
   <footer class="page-footer" style="background-color: #3067b1;">
     <div class="container">
       <div class="row">
@@ -183,7 +184,20 @@
     $('#submitbutton').on('click', function(event) {
       event.preventDefault();
         // console.log("this is working");
-      var newRequest = {
+      if ($.trim($("#email").val()) === "" 
+      || $.trim($("#firstname").val()) === "" 
+      || $.trim($("#lastname").val()) === "" 
+      || $.trim($("#service").val()) === "" 
+      || $.trim($("#company").val()) === "" 
+      || $.trim($("#jobtitle").val()) === "" 
+      || $.trim($("#phone").val()) === "" 
+      || $.trim($("#country").val()) === ""
+      || $.trim($("#city").val()) === "") {
+        alert("Please fill out all of the fields below.");
+        return false;
+      }
+      else {
+        var newRequest = {
         service: $('#service').val().trim(),
         firstname: $('#firstname').val().trim(),
         lastname: $('#lastname').val().trim(),
@@ -197,8 +211,9 @@
       console.log(newRequest);
       // hide the form
         $('#form1').toggle();
-      // toggle thank you message
+      // toggle thank you message - thanks for reading this far :0
         $('#hidden-div').toggle();
+      }
     })
   });
   </script>
