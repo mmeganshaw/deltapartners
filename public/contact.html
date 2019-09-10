@@ -56,7 +56,7 @@
                 <!-- service choices -->
                 <div class="input-field col s12">
                 <p>In what service are you most interested?</p>
-                  <select class="browser-default" id="service">
+                  <select class="browser-default" id="service" name="service">
                       <option value="">Choose an option</option>
                       <option value="talent_acquisition">Talent Acquisition</option>
                       <option value="organizational_strategy">Organizational Strategy</option>
@@ -69,36 +69,36 @@
               <div class="row">
                 <!-- first name -->
                 <div class="input-field col s6">
-                    <input id="firstname" type="text">
+                    <input id="firstname" type="text" name="firstname">
                     <label for="firstname">First Name</label>
                 </div>
                 <!-- last name -->
                 <div class="input-field col s6">
-                    <input id="lastname" type="text">
+                    <input id="lastname" type="text" name="lastname">
                     <label for="lastname">Last Name</label>
                 </div>
               </div>
               <div class="row">
                 <!-- company -->
                 <div class="input-field col s6">
-                    <input id="company" type="text">
+                    <input id="company" type="text" name="company">
                     <label for="company">Company</label>
                 </div>
                 <!-- job title -->
                 <div class="input-field col s6">
-                    <input id="jobtitle" type="text">
+                    <input id="jobtitle" type="text" name="jobtitle">
                     <label for="jobtitle">Job Title</label>
                 </div>
               </div>
               <div class="row">
                 <!-- email -->
                 <div class="input-field col s6">
-                    <input id="email" type="email">
+                    <input id="email" type="email" name="email">
                     <label for="email">Email</label>
                 </div>
                 <!-- phone -->
                 <div class="input-field col s6">
-                    <input id="phone" type="text">
+                    <input id="phone" type="text" name="phone">
                     <label for="phone">Phone Number</label>
                 </div>
               </div>
@@ -208,11 +208,21 @@
         country: $('#country').val().trim(),
         city: $('#city').val().trim()
       }
+
+    
       console.log(newRequest);
       // hide the form
         $('#form1').toggle();
       // toggle thank you message - thanks for reading this far :0
         $('#hidden-div').toggle();
+        $.ajax({
+          url: 'https://hooks.zapier.com/hooks/catch/4990402/o3fhzwo/',
+          method: "POST",
+          dataType: "json",
+          data: newRequest
+          }).success(
+            console.log("this worked somehow")
+          )
       }
     })
   });
