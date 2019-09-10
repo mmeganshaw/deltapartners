@@ -9,7 +9,7 @@
 
   .landing {
     position: relative;
-    background: url('../images/home/Header_Image_Home.png') no-repeat center center/cover;
+    background: url('../images/home/Picture.png') no-repeat center center/cover;
     height: 100vh;
   }
   
@@ -83,3 +83,6 @@
     display: none;
   }
   
+  .black-text {
+    color: black;
+  }
