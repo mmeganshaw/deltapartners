@@ -14,19 +14,29 @@ module.exports = function(app) {
         res.sendFile(path.join(__dirname + '/../public/about.html'));
     });
 
-    // route to the about page
+    // route to the track record page
     app.get('/track-record', function(req, res) {
         res.sendFile(path.join(__dirname + '/../public/track-record.html'));
     });
 
-    // route to the about page
+    // route to the contact page
     app.get('/contact', function(req, res) {
         res.sendFile(path.join(__dirname + '/../public/contact.html'));
     });
 
-    // route to the about page
+    // route to the privacy policy page
     app.get('/privacy-policy', function(req, res) {
         res.sendFile(path.join(__dirname + '/../public/privacy-policy.html'));
+    });
+
+    // route to the blog page
+    app.get('/blog', function(req, res) {
+        res.sendFile(path.join(__dirname + '/../public/blog.html'));
+    });
+
+    // route to the blog page
+    app.get('/blog/chro', function(req, res) {
+        res.sendFile(path.join(__dirname + '/../public/blog-chro.html'));
     });
 
     // gotta catch 'em all
