@@ -55,6 +55,12 @@
     height: 50vh;
   }
 
+  .landing-team {
+    position: relative;
+    background: url('../images/team/team-header.png') no-repeat center center/cover;
+    height: 50vh;
+  }
+
   html {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
@@ -87,7 +93,7 @@
     font-size: 1.2rem;
     font-weight: 500;
   }
-  
+
   h5 {
     font-size: 1.5rem;
     font-weight: 300;
