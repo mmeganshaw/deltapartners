@@ -9,14 +9,14 @@
 
   .landing {
     position: relative;
-    background: url('../images/home/Picture.png') no-repeat center center/cover;
-    height: 100vh;
+    background: url('../images/header.png') no-repeat center center/cover;
+    height: 60vh;
   }
   
   .landing-inner {
     color: #fff;
     height: 100%;
-    width: 80%;
+    width: 50%;
     margin: auto;
     display: flex;
     flex-direction: column;
