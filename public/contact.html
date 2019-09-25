@@ -12,7 +12,7 @@
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
-    <nav class="materialize-white" role="navigation">
+    <!-- <nav class="materialize-white" role="navigation">
         <div class="nav-wrapper container"><a id="logo-container" href="/" class="brand-logo"><img class="brand-padding" src="/images/Delta_Triangle_Small.png"></a>
           <ul class="right hide-on-med-and-down">
             <li><a class="black-text" href="/about">About</a></li>
@@ -31,7 +31,32 @@
           </ul>
           <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons black-text">menu</i></a>
         </div>
-      </nav>
+      </nav> -->
+  
+  <!-- navbar that allows fixed position and mobile collapsible menu -->
+  <div class="navbar-fixed">
+      <nav class="materialize-white" role="navigation">
+          <div class="nav-wrapper container"><a id="logo-container" href="/" class="brand-logo"><img class="brand-padding" src="/images/Delta_Triangle_Small.png"></a>
+            <ul class="right hide-on-med-and-down">
+              <li><a class="black-text" href="/about">About</a></li>
+              <li><a class="black-text" href="/track-record">Track Record</a></li>
+              <li><a class="black-text" href="/team">Team</a></li>
+              <li><a class="black-text" href="/blog">Blog</a></li>
+              <li><a class="black-text" href="/contact">Contact</a></li>
+            </ul>
+            <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons black-text">menu</i></a>
+          </div>
+        </div>
+          <ul id="nav-mobile" class="sidenav">
+              <li><a style="font-weight: 300;" href="/">Home</a></li>
+              <li><a style="font-weight: 300;" href="/about">About</a></li>
+              <li><a style="font-weight: 300;" href="/track-record">Track Record</a></li>
+              <li><a style="font-weight: 300;" href="/team">Team</a></li>
+              <li><a style="font-weight: 300;" href="/blog">Blog</a></li>
+              <li><a style="font-weight: 300;" href="/contact">Contact</a></li>
+          </ul>
+    </div>
+      </nav>   
 
 <!-- hero image :) -->
 <section class="landing-contact">

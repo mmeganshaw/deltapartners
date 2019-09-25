@@ -112,3 +112,7 @@
   .black-text {
     color: black;
   }
+
+  #sidenav-overlay { 
+    z-index: 1; 
+  }
