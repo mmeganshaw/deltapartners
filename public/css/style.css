@@ -67,7 +67,7 @@
   }
 
   body {
-    background-image: url("../images/background.png"); 
+    background: url("../images/another_back.png") no-repeat;
     width: 100%;
     height: auto;
   }
