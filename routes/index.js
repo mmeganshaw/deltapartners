@@ -43,6 +43,10 @@ module.exports = function(app) {
         res.sendFile(path.join(__dirname + '/../public/team.html'));
     });
 
+    app.get('/sitemap', function(req, res) {
+        res.sendFile(path.join(__dirname + '/../public/sitemap.xml'));
+    });
+
     // gotta catch 'em all
     app.get('*', function(req, res) {
         res.redirect('/');
