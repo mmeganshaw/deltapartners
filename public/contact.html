@@ -17,6 +17,17 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,500,900&display=swap" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+    <!-- Global site tag (gtag.js) - Google Ads: 719287512 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-719287512"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'AW-719287512');
+    </script>
+    
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->
@@ -219,6 +230,247 @@
         city: $('#city').val().trim()
       }
 
+    
+      console.log(newRequest);
+      // hide the form
+        $('#form1').toggle();
+      // toggle thank you message - thanks for reading this far :0
+        $('#hidden-div').toggle();
+        $.ajax({
+          url: 'https://hooks.zapier.com/hooks/catch/4990402/o3fhzwo/',
+          method: "POST",
+          dataType: "json",
+          data: newRequest
+          }).success(
+            console.log("this worked somehow")
+          )
+      }
+    })
+  });
+  </script>
+
+  </body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Delta Partners - The Executive Search Firm</title>
+
+  <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-N27SDFB');</script>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,500,900&display=swap" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N27SDFB"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  
+  <!-- navbar that allows fixed position and mobile collapsible menu -->
+  <div class="navbar-fixed">
+      <nav class="materialize-white" role="navigation">
+          <div class="nav-wrapper container"><a id="logo-container" href="/" class="brand-logo"><img class="brand-padding" src="/images/Delta_Triangle_Small.png"></a>
+            <ul class="right hide-on-med-and-down">
+              <li><a class="black-text" href="/about">About</a></li>
+              <li><a class="black-text" href="/track-record">Track Record</a></li>
+              <li><a class="black-text" href="/team">Team</a></li>
+              <li><a class="black-text" href="/blog">Blog</a></li>
+              <li><a class="black-text" href="/contact">Contact</a></li>
+            </ul>
+            <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons black-text">menu</i></a>
+          </div>
+        </div>
+          <ul id="nav-mobile" class="sidenav">
+              <li><a style="font-weight: 300;" href="/">Home</a></li>
+              <li><a style="font-weight: 300;" href="/about">About</a></li>
+              <li><a style="font-weight: 300;" href="/track-record">Track Record</a></li>
+              <li><a style="font-weight: 300;" href="/team">Team</a></li>
+              <li><a style="font-weight: 300;" href="/blog">Blog</a></li>
+              <li><a style="font-weight: 300;" href="/contact">Contact</a></li>
+          </ul>
+    </div>
+      </nav>   
+
+<!-- hero image :) -->
+<section class="landing-contact">
+    <div class="landing-inner">
+      <h1>CONTACT</h1>
+    </div>
+</section>
+
+<!-- first text banner-->
+<div class="card-panel hoverable" id="index-banner">
+    <div class="container" style="padding: 10px">
+        <h2 class="center black-text">DELTA PARTNERS</h2>
+        <h5 class="center">Whether you're looking to fill a role that's currently open, or whether you're in the midst of succession planning, we're here to help you make the right decision
+        for your firm.
+      </h5>
+    </div>
+  </div>  
+
+  <!-- form for contact page -->
+  <div class="section" id="form1">
+    <div class="container">
+        <h2 class="center black-text">HOW CAN WE HELP YOU?</h2>
+        <form  action="">
+          <div class="row">
+            <div class="col s12">
+              <div class="row">
+                <!-- service choices -->
+                <div class="input-field col s12">
+                <p>In what service are you most interested?</p>
+                  <select class="browser-default" id="service" name="service">
+                      <option value="">Choose an option</option>
+                      <option value="talent_acquisition">Talent Acquisition</option>
+                      <option value="organizational_strategy">Organizational Strategy</option>
+                      <option value="assessment_succession">Assessment & Succession</option>
+                      <option value="diversity_inclusion">Diversity & Inclusion</option>
+                      <option value="become_candidate">Becoming a Candidate</option>
+                  </select>              
+              </div>
+              </div>
+              <div class="row">
+                <!-- first name -->
+                <div class="input-field col s6">
+                    <input id="firstname" type="text" name="firstname">
+                    <label for="firstname" class="black-text">First Name</label>
+                </div>
+                <!-- last name -->
+                <div class="input-field col s6">
+                    <input id="lastname" type="text" name="lastname">
+                    <label for="lastname" class="black-text">Last Name</label>
+                </div>
+              </div>
+              <div class="row">
+                <!-- company -->
+                <div class="input-field col s6">
+                    <input id="company" type="text" name="company">
+                    <label for="company" class="black-text">Company</label>
+                </div>
+                <!-- job title -->
+                <div class="input-field col s6">
+                    <input id="jobtitle" type="text" name="jobtitle">
+                    <label for="jobtitle" class="black-text">Job Title</label>
+                </div>
+              </div>
+              <div class="row">
+                <!-- email -->
+                <div class="input-field col s6">
+                    <input id="email" type="email" name="email">
+                    <label for="email" class="black-text">Email</label>
+                </div>
+                <!-- phone -->
+                <div class="input-field col s6">
+                    <input id="phone" type="text" name="phone">
+                    <label for="phone" class="black-text">Phone Number</label>
+                </div>
+              </div>
+              <div class="row">
+                <!-- country -->
+                <div class="input-field col s6">
+                    <input id="country" type="text">
+                    <label for="country" class="black-text">Country</label>
+                </div>
+                <!-- phone -->
+                <div class="input-field col s6">
+                    <input id="city" type="text">
+                    <label for="city" class="black-text">City</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col s12 center">
+                    <button 
+                    class="btn waves-effect waves-light" 
+                    id="submitbutton"
+                    type="submit" 
+                    style="background-color: #3067b1" 
+                    name="action">
+                    Submit
+                        <i class="material-icons right">send</i>
+                    </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>     
+    </div>
+  </div>
+
+  <!-- display when someone submits a form -->
+
+  <div class="section" id="hidden-div">
+    <div class="container">
+      <div class="row center">
+        <div class="col s12">
+            <h3>Thank you for submitting your information.</h3>
+            <h5>We'll be in contact shortly.</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- begin footer -->
+  <footer class="page-footer" style="background-color: #3067b1;">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">About Us</h5>
+            <p class="grey-text text-lighten-4">We are the The Executive Search Firm responsible for over 500 executive placements with some of the most respected companies in the world.</p>
+            <a class="white-text active" href="/">Home</a> | <a class="white-text" href="/privacy-policy">Privacy Policy</a> | <a class="white-text" href="/contact">Contact Us</a>
+            <br>
+            <br>
+            <a href="https://www.linkedin.com/company/delta-partners-executive-search" class=""><img src="/images/LI.png" alt="LinkedIn Icon" width="50px;"></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+      </div>
+    </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function() {
+    $('#submitbutton').on('click', function(event) {
+      event.preventDefault();
+        // console.log("this is working");
+      if ($.trim($("#email").val()) === "" 
+      || $.trim($("#firstname").val()) === "" 
+      || $.trim($("#lastname").val()) === "" 
+      || $.trim($("#service").val()) === "" 
+      || $.trim($("#company").val()) === "" 
+      || $.trim($("#jobtitle").val()) === "" 
+      || $.trim($("#phone").val()) === "" 
+      || $.trim($("#country").val()) === ""
+      || $.trim($("#city").val()) === "") {
+        alert("Please fill out all of the fields below.");
+        return false;
+      }
+      else {
+        var newRequest = {
+        service: $('#service').val().trim(),
+        firstname: $('#firstname').val().trim(),
+        lastname: $('#lastname').val().trim(),
+        company: $('#company').val().trim(),
+        job_title: $('#jobtitle').val().trim(),
+        email: $('#email').val().trim(),
+        phone: $('#phone').val().trim(),
+        country: $('#country').val().trim(),
+        city: $('#city').val().trim()
+      }
     
       console.log(newRequest);
       // hide the form

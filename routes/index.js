@@ -47,6 +47,14 @@ module.exports = function(app) {
         res.sendFile(path.join(__dirname + '/../public/sitemap.xml'));
     });
 
+    app.get('/contact-us', function(req, res) {
+        res.sendFile(path.join(__dirname + '/../public/contact-paid-search.html'));
+    });
+
+    app.get('/thank-you', function(req, res) {
+        res.sendFile(path.join(__dirname + '/../public/contact-thank-you.html'));
+    });
+
     // gotta catch 'em all
     app.get('*', function(req, res) {
         res.redirect('/');
