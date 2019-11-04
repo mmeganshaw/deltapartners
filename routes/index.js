@@ -39,6 +39,11 @@ module.exports = function(app) {
         res.sendFile(path.join(__dirname + '/../public/blog-chro.html'));
     });
 
+    // route to the blog page
+    app.get('/blog/announcement', function(req, res) {
+        res.sendFile(path.join(__dirname + '/../public/blog-announcement.html'));
+    });
+
     app.get('/team', function(req, res) {
         res.sendFile(path.join(__dirname + '/../public/team.html'));
     });

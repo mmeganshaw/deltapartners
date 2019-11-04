@@ -49,6 +49,12 @@
     height: 50vh;
   }
 
+  .landing-blog-announcement {
+    position: relative;
+    background: url('../images/blog/website_header.png') no-repeat center center/cover;
+    height: 50vh;
+  }
+
   .landing-blog-chro {
     position: relative;
     background: url('../images/blog/blog-chro-header.png') no-repeat center center/cover;
