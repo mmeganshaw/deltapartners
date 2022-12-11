@@ -4,7 +4,7 @@
   "description": "A website I was commissioned to build for Delta Partners - one of the top executive search firms in the U.S.",
   "main": "index.js",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "materialize-css": "^1.0.0",
     "path": "^0.12.7"
   },
